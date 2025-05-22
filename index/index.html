@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>La Tribuna Luzu TV</title>
+    <style>
+    .contenedor-general {
+      margin: 0 auto;         /* Centra el contenido horizontalmente */
+      max-width: 1200px;      /* Limita el ancho máximo */
+      padding: 20px;          /* Espacio interno */
+    }
+  </style>
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+     <div class="contenedor-general"></div>
+    <section class="pantalla-principal">
+        <div class="gif-container">
+            <img src="gift.gif" alt="GIF animado" class="gif-fondo" />
+            <div class="gif-overlay"></div>
+            <img src="logo.png" alt="Logo encima del GIF" class="imagen-superpuesta" />
+            <div class="texto-superpuesto">Más cerca que nunca</div>
+            <div class="subtitulo">Encuentro único para los verdaderos fans</div>
+            <div class="subtitulo2">Tribuna + meet y greet</div>
+            <a href="#formulario" class="boton-participar">Quiero Participar</a>
+        </div>
+    </section>
+
+    <section class="descripcion">
+        <h2>La tribuna se reinventa</h2>
+        <h3>Un nuevo espacio para la comunidad</h3>
+        <p>
+            La Tribuna regresa más fuerte que nunca, con una nueva experiencia pensada para los verdaderos fans de Luzu TV. Con más interacción, contenido exclusivo y un evento que te acerca como nunca a tus ídolos.
+        </p>
+    </section>
+
+    <section class="beneficios grid-container">
+        <div class="beneficio">
+            <div class="icono-circular">
+                <img src="microfono.png" alt="Programa en vivo" />
+            </div>
+            <h3>Programa en vivo</h3>
+        </div>
+        <div class="beneficio">
+            <div class="icono-circular">
+                <img src="regalo.png" alt="Sorteos y sorpresas" />
+            </div>
+            <h3>Sorteos y sorpresas</h3>
+        </div>
+        <div class="beneficio">
+            <div class="icono-circular meet-greet-icon">
+                <img src="comunidad.gif" alt="Meet y Greet" />
+                
+            </div>
+            <h3>Meet & Greet</h3>
+        </div>
+    </section>
+
+    <section class="contenido grid-container">
+        <h2>Conocé a tus ídolos</h2>
+        <h3>El meet & greet que no te podés perder</h3>
+        <ul class="puntos">
+            <li>Encuentro exclusivo con los protagonistas de Luzu TV.</li>
+            <li>Espacio para preguntas y charla directa con los talentos.</li>
+            <li>Firma de autógrafos y fotos.</li>
+            <li>Una experiencia única para los verdaderos seguidores.</li>
+        </ul>
+
+        <div class="card">
+            <img src="1.png" alt="Nico Occhiato" class="card-img" />
+            <div class="card-texto">
+                <h3>Nico Occhiato</h3>
+                <p>Carismático conductor y mente creativa detrás de Nadie Dice Nada.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="4.png" alt="Flor Jazmín Peña" class="card-img" />
+            <div class="card-texto">
+                <h3>Flor Jazmín Peña</h3>
+                <p>Llena de risas, anécdotas y una frescura única.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="3.png" alt="Momi Giardina" class="card-img" />
+            <div class="card-texto">
+                <h3>Momi Giardina</h3>
+                <p>Risa inconfundible y humor filoso.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="2.png" alt="Santi Talledo" class="card-img" />
+            <div class="card-texto">
+                <h3>Santi Talledo</h3>
+                <p>Creativo, sutil y gran narrador.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="formulario" id="formulario">
+        <h2>Ingresá tus datos para participar</h2>
+        <div id="feedback" style="display: none; color: white; background: rgba(234, 23, 62, 0.95); padding: 20px; margin-bottom: 20px; border-radius: 10px; position: relative;">
+            <button id="cerrar-feedback" style="position: absolute; top: 5px; right: 10px; background: transparent; color: white; border: none; font-size: 20px; cursor: pointer;">×</button>
+            <p id="mensaje-final"></p>
+        </div>
+
+        <form>
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="motivo">¿Por qué querés ser parte?</label>
+            <textarea id="motivo" name="mensaje" rows="3" required></textarea>
+
+            <button type="submit" id="submit" class="boton-enviar">Enviar</button>
+        </form>
+
+        <section class="feedback oculto">
+            <p id="mensaje-final">
+                ¡Estás adentro! Gracias por sumarte a la tribuna de <strong>Nadie Dice Nada</strong>. Muy pronto vamos a contactarte con más info. Estate atentx a tu mail y preparate para vivir el programa desde adentro.
+                Nos vemos en el estudio<span id="nombre-placeholder">NOMBRE</span>
+                <span id="email-placeholder">EMAIL</span>
+                <span id="motivo-placeholder">MOTIVO</span>
+            </p>
+        </section>
+    </section>
+
+<section class="testimonios">
+  <h2>Lo que dicen nuestros participantes</h2>
+  <div class="testimonios-container">
+    <div class="testimonio">
+      <img src="WhatsApp Image 2025-05-22 at 16.05.33.jpeg" alt="Foto de Juan Pérez" class="testimonio-img">
+      <p>"La experiencia en la tribuna fue increíble. La comunidad fue muy acogedora, siempre abierta a compartir y colaborar. Definitivamente, volveré!"
+</p>
+      <h4>- Martina Perez</h4>
+    </div>
+    <div class="testimonio">
+      <img src="mujer.jpg" alt="Foto de María Gómez" class="testimonio-img">
+      <p>"Estar en la tribuna cambió completamente mi perspectiva. Fue una experiencia única y llena de aprendizaje. ¡Sin duda lo recomiendo!"</p>
+      <h4>- María Gómez</h4>
+    </div>
+    <div class="testimonio">
+      <img src="WhatsApp Image 2025-05-22 at 16.05.34.jpeg" alt="Foto de Carlos Rodríguez" class="testimonio-img">
+      <p>"Participar en la tribuna fue una de las mejores decisiones que tomé.  Las discusiones y debates fueron súper interesantes y me hicieron ver las cosas de otra manera."</p>
+      <h4>- Tomas Rodríguez</h4>
+    </div>
+  </div>
+</section>
+<div class="cta-final">
+  <a href="#formulario" class="boton-parte">Quiero ser parte</a>
+</div>
+
+           
+
+ <footer>
+  <h4>Donde pasa lo que no sabés que necesitás ver.</h4>
+  <h4>📧 contacto@luzutv.com</h4>
+  <h4>©️ 2025 Todos los derechos reservados.</h4>
+
+  <div class="redes-sociales">
+    <h4>Redes sociales</h4>
+    <div class="iconos">
+      <img src="ttw-removebg-preview.png" alt="Twitter" />
+      <img src="instagram-logo-transparent-free-png-removebg-preview.png" alt="Instagram" />
+      <img src="youtube-removebg-preview.png" alt="YouTube" />
+    </div>
+  </div>
+</footer>
+
+
+    <script src="./scrip.js"></script>
+</body>
+</html>
